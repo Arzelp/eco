@@ -5,7 +5,7 @@
 ** Login   <arzel_p@epitech.eu>
 **
 ** Started on  Tue Sep 27 23:03:51 2016 Paskal Arzel
-** Last update Fri Sep 30 22:35:18 2016 Paskal Arzel
+** Last update Sun Oct  2 21:14:00 2016 Paskal Arzel
 */
 
 #include <math.h>
@@ -131,7 +131,7 @@ int	main(int ac, char **av)
       printf("Nombre de personnes incorrect\n");
       return (1);
     }
-  if ((taux = atoi(av[3])) < 0 || atoi(av[4]) <= 0)
+  if ((taux = atof(av[3])) < 0 || atoi(av[4]) <= 0)
     {
       printf("Taux ou durée incorrect(s) (< 0)\n");
       return (1);
